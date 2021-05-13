@@ -1,2 +1,2 @@
-import './filters/intro-to-block-filters';
+import './filters/button-size';
 import './filters/cover-alignment';
