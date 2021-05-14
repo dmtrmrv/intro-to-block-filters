@@ -18,10 +18,6 @@ const { PanelBody, SelectControl } = wp.components;
  * @return {Object}          Filtered block settings
  */
 function addAttributes(settings, name) {
-	if (name !== 'core/button') {
-		return settings;
-	}
-
 	if (name === 'core/button') {
 		return assign({}, settings, {
 			attributes: merge(settings.attributes, {
