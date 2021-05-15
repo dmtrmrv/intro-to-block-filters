@@ -5,5 +5,5 @@ A demo WordPress plugin to demo WordPress block filters. It does two things:
 
 ## Installation
 - Pull the plugin repo to `wp-content/plugins` folder of your WordPress site
-- From command line run `npm run build`
-- In WordPress dashboard go to Plugins and click "Activate" under "Intro to Block Filters"
+- Navigate to plugin folder in command line and run `npm install && npm run build`
+- In WordPress dashboard go to _Plugins_ and click _Activate_ under _Intro to Block Filters_
