@@ -61,9 +61,18 @@ const addInspectorControl = createHigherOrderComponent((BlockEdit) => {
 							label={__('Size', 'intro-to-filters')}
 							value={size}
 							options={[
-								{ label: __('Regular', 'intro-to-filters'), value: 'regular' },
-								{ label: __('Small', 'intro-to-filters'), value: 'small' },
-								{ label: __('Large', 'intro-to-filters'), value: 'large' },
+								{
+									label: __('Regular', 'intro-to-filters'),
+									value: 'regular',
+								},
+								{
+									label: __('Small', 'intro-to-filters'),
+									value: 'small',
+								},
+								{
+									label: __('Large', 'intro-to-filters'),
+									value: 'large',
+								},
 							]}
 							onChange={(value) => {
 								setAttributes({ size: value });
@@ -128,7 +137,7 @@ function addSizeClassFrontEnd(props, block, attributes) {
 	const { className } = props;
 	const { size } = attributes;
 
-	return _.assign(props, {
+	return assign({}, props, {
 		className: classnames(className, size ? `has-size-${size}` : ''),
 	});
 }
