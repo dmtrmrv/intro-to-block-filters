@@ -142,6 +142,7 @@ function addSizeClassFrontEnd(props, block, attributes) {
 	});
 }
 
+// Comment out to test the PHP approach defined in intro-to-block-filters.php
 addFilter(
 	'blocks.getSaveContent.extraProps',
 	'intro-to-filters/button-block/add-front-end-class',
